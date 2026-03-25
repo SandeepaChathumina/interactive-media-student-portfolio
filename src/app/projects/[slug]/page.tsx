@@ -20,7 +20,7 @@ export default async function ProjectDetailsPage({ params }: Props) {
         </Link>
 
         <div className="mt-6 grid gap-10 md:grid-cols-2">
-          <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm">
+          <div className="overflow-hidden rounded-4xl border border-slate-200 bg-white shadow-sm">
             <img
               src={project.image}
               alt={project.title}

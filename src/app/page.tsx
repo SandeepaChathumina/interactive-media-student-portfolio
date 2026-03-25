@@ -35,11 +35,11 @@ export default function HomePage() {
           </div>
 
           <div className="flex justify-center">
-            <div className="w-full max-w-md rounded-[2rem] border border-slate-200 bg-gradient-to-br from-pink-100 via-white to-sky-100 p-6 shadow-sm">
+            <div className="w-full max-w-md rounded-4xl border border-slate-200 bg-linear-to-br from-pink-100 via-white to-sky-100 p-6 shadow-sm">
               <img
                 src="/profile-placeholder.svg"
                 alt={siteData.name}
-                className="h-auto w-full rounded-[1.5rem] object-cover"
+                className="h-auto w-full rounded-3xl object-cover"
               />
             </div>
           </div>
