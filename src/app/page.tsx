@@ -8,19 +8,23 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="section-space">
+      <section className="section-space relative overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-green-200/30 to-emerald-200/30 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-emerald-200/30 to-teal-200/30 rounded-full blur-3xl"></div>
+        </div>
         <div className="container-custom grid items-center gap-12 md:grid-cols-2">
-          <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-pink-500">
+          <div className="animate-fade-in-up">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-green-600">
               Welcome to my portfolio
             </p>
-            <h1 className="text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-slate-900 md:text-7xl leading-tight">
               {siteData.name}
             </h1>
-            <p className="mt-4 text-xl font-medium text-slate-600">
+            <p className="mt-4 text-xl font-medium text-green-600">
               {siteData.title}
             </p>
-            <p className="mt-6 max-w-xl text-base leading-8 text-slate-600">
+            <p className="mt-6 max-w-xl text-base leading-8 text-slate-700">
               {siteData.heroDescription}
             </p>
 
@@ -34,19 +38,19 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="flex justify-center">
-            <div className="w-full max-w-md rounded-4xl border border-slate-200 bg-linear-to-br from-pink-100 via-white to-sky-100 p-6 shadow-sm">
+          <div className="flex justify-center animate-slide-in-right">
+            <div className="w-full max-w-md rounded-3xl border border-green-200/50 bg-gradient-to-br from-green-100/50 via-white to-emerald-100/50 p-6 shadow-2xl backdrop-blur-sm hover:shadow-3xl transition-all duration-500 animate-float">
               <img
                 src="/profile-placeholder.svg"
                 alt={siteData.name}
-                className="h-auto w-full rounded-3xl object-cover"
+                className="h-auto w-full rounded-2xl object-cover shadow-lg"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section-space bg-slate-50">
+      <section className="section-space bg-gradient-to-br from-green-50 to-emerald-50">
         <div className="container-custom">
           <SectionTitle
             eyebrow="About"
@@ -54,21 +58,21 @@ export default function HomePage() {
             description={siteData.about}
           />
 
-          <div className="grid gap-6 md:grid-cols-4">
-            <div className="card p-6">
-              <h3 className="font-semibold">Degree</h3>
+          <div className="grid gap-6 md:grid-cols-4 mt-12">
+            <div className="card p-6 animate-fade-in-up hover:bg-gradient-to-br hover:from-green-50 hover:to-emerald-50">
+              <h3 className="font-semibold text-green-700">Degree</h3>
               <p className="mt-2 text-sm text-slate-600">{siteData.degree}</p>
             </div>
-            <div className="card p-6">
-              <h3 className="font-semibold">University</h3>
+            <div className="card p-6 animate-fade-in-up hover:bg-gradient-to-br hover:from-green-50 hover:to-emerald-50" style={{animationDelay: '0.1s'}}>
+              <h3 className="font-semibold text-green-700">University</h3>
               <p className="mt-2 text-sm text-slate-600">{siteData.university}</p>
             </div>
-            <div className="card p-6">
-              <h3 className="font-semibold">Year of Study</h3>
+            <div className="card p-6 animate-fade-in-up hover:bg-gradient-to-br hover:from-green-50 hover:to-emerald-50" style={{animationDelay: '0.2s'}}>
+              <h3 className="font-semibold text-green-700">Year of Study</h3>
               <p className="mt-2 text-sm text-slate-600">{siteData.yearOfStudy}</p>
             </div>
-            <div className="card p-6">
-              <h3 className="font-semibold">Expected Graduation</h3>
+            <div className="card p-6 animate-fade-in-up hover:bg-gradient-to-br hover:from-green-50 hover:to-emerald-50" style={{animationDelay: '0.3s'}}>
+              <h3 className="font-semibold text-green-700">Expected Graduation</h3>
               <p className="mt-2 text-sm text-slate-600">
                 {siteData.expectedGraduation}
               </p>
@@ -84,9 +88,9 @@ export default function HomePage() {
             title="Creative, technical, and collaborative strengths"
           />
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            <div className="card p-6">
-              <h3 className="mb-4 text-lg font-semibold">Design Skills</h3>
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4 mt-12">
+            <div className="card p-6 animate-fade-in-up">
+              <h3 className="mb-4 text-lg font-semibold text-green-700">Design Skills</h3>
               <div className="flex flex-wrap gap-2">
                 {siteData.designSkills.map((item) => (
                   <span key={item} className="tag">
@@ -96,8 +100,8 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="card p-6">
-              <h3 className="mb-4 text-lg font-semibold">Development Skills</h3>
+            <div className="card p-6 animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+              <h3 className="mb-4 text-lg font-semibold text-green-700">Development Skills</h3>
               <div className="flex flex-wrap gap-2">
                 {siteData.developmentSkills.map((item) => (
                   <span key={item} className="tag">
@@ -107,8 +111,8 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="card p-6">
-              <h3 className="mb-4 text-lg font-semibold">Software / Tools</h3>
+            <div className="card p-6 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+              <h3 className="mb-4 text-lg font-semibold text-green-700">Software / Tools</h3>
               <div className="flex flex-wrap gap-2">
                 {siteData.softwareTools.map((item) => (
                   <span key={item} className="tag">
@@ -118,8 +122,8 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="card p-6">
-              <h3 className="mb-4 text-lg font-semibold">Soft Skills</h3>
+            <div className="card p-6 animate-fade-in-up" style={{animationDelay: '0.3s'}}>
+              <h3 className="mb-4 text-lg font-semibold text-green-700">Soft Skills</h3>
               <div className="flex flex-wrap gap-2">
                 {siteData.softSkills.map((item) => (
                   <span key={item} className="tag">
@@ -161,12 +165,12 @@ export default function HomePage() {
             title="Learning and continuous improvement"
           />
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {siteData.certifications.map((cert) => (
-              <div key={cert.name} className="card p-6">
-                <h3 className="text-lg font-semibold">{cert.name}</h3>
+          <div className="grid gap-6 md:grid-cols-3 mt-12">
+            {siteData.certifications.map((cert, idx) => (
+              <div key={cert.name} className="card p-6 animate-fade-in-up" style={{animationDelay: `${idx * 0.1}s`}}>
+                <h3 className="text-lg font-semibold text-green-700">{cert.name}</h3>
                 <p className="mt-2 text-sm text-slate-600">{cert.issuer}</p>
-                <p className="mt-1 text-sm text-slate-500">{cert.year}</p>
+                <p className="mt-1 text-sm text-green-600">{cert.year}</p>
               </div>
             ))}
           </div>

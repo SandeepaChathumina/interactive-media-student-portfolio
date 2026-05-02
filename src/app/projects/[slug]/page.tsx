@@ -13,14 +13,14 @@ export default async function ProjectDetailsPage({ params }: Props) {
   if (!project) return notFound();
 
   return (
-    <section className="section-space">
+    <section className="section-space bg-gradient-to-br from-white via-green-50 to-white">
       <div className="container-custom">
-        <Link href="/projects" className="text-sm font-medium text-pink-500">
+        <Link href="/projects" className="text-sm font-semibold text-green-600 hover:text-green-700 transition-colors duration-300 inline-flex items-center gap-1">
           ← Back to Projects
         </Link>
 
         <div className="mt-6 grid gap-10 md:grid-cols-2">
-          <div className="overflow-hidden rounded-4xl border border-slate-200 bg-white shadow-sm">
+          <div className="overflow-hidden rounded-3xl border border-green-200/50 bg-white shadow-lg hover:shadow-2xl transition-all duration-500 animate-fade-in-up">
             <img
               src={project.image}
               alt={project.title}
@@ -28,8 +28,8 @@ export default async function ProjectDetailsPage({ params }: Props) {
             />
           </div>
 
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-pink-500">
+          <div className="animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-600">
               {project.category}
             </p>
             <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-900">
@@ -40,8 +40,8 @@ export default async function ProjectDetailsPage({ params }: Props) {
             </p>
 
             <div className="mt-8 space-y-3 text-slate-600">
-              <p><strong>Role:</strong> {project.role}</p>
-              <p><strong>Duration:</strong> {project.duration}</p>
+              <p><strong className="text-green-600">Role:</strong> {project.role}</p>
+              <p><strong className="text-green-600">Duration:</strong> {project.duration}</p>
             </div>
 
             <div className="mt-6 flex flex-wrap gap-2">

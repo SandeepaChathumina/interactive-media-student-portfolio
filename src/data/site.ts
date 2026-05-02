@@ -103,64 +103,79 @@ export const siteData = {
 
 export const projects: Project[] = [
   {
-    title: "Creative Event Branding Kit",
-    slug: "creative-event-branding-kit",
-    category: "Branding Design",
+    title: "Smart Grocery Management System",
+    slug: "smart-grocery-management",
+    category: "Full Stack Development",
     shortDescription:
-      "A visual identity project including posters, social media creatives, and brand assets.",
+      "A comprehensive MERN-based e-commerce platform for online grocery shopping with advanced order and delivery management features.",
     fullDescription:
-      "This project focused on building a modern visual identity for a fictional creative event. The design system included posters, banners, social media posts, and a color palette designed to maintain consistency across multiple digital platforms.",
-    tools: ["Photoshop", "Illustrator", "Canva"],
-    role: "Designer",
-    duration: "2 Weeks",
+      "Smart Grocery Management is a full-stack MERN application designed to streamline online grocery shopping. The platform features an intuitive product catalog, smart cart system, secure payment integration, real-time order tracking, and intelligent delivery management. Users can browse fresh groceries, place orders, track deliveries in real-time, and manage their purchase history. The admin dashboard provides comprehensive order management, inventory tracking, and delivery logistics optimization.",
+    tools: ["MongoDB", "Express.js", "React", "Node.js", "JWT", "Stripe"],
+    role: "Full Stack Developer",
+    duration: "6 Weeks",
     image: "/profile-placeholder.svg",
-    behanceLink: "#",
-    featured: true,
-  },
-  {
-    title: "Mobile App UI Concept",
-    slug: "mobile-app-ui-concept",
-    category: "UI/UX Design",
-    shortDescription:
-      "A modern mobile app interface concept focused on usability and visual clarity.",
-    fullDescription:
-      "This UI concept was created to explore clean mobile design patterns, user-friendly navigation, and modern card-based layouts. The project included low-fidelity wireframes and high-fidelity screens created in Figma.",
-    tools: ["Figma", "Photoshop"],
-    role: "UI/UX Designer",
-    duration: "10 Days",
-    image: "/profile-placeholder.svg",
-    liveLink: "#",
-    behanceLink: "#",
-    featured: true,
-  },
-  {
-    title: "Interactive Portfolio Website",
-    slug: "interactive-portfolio-website",
-    category: "Web Design",
-    shortDescription:
-      "A personal portfolio concept designed to showcase projects and creative skills.",
-    fullDescription:
-      "This portfolio project was designed with a minimal and creative style to highlight projects, skills, and personal branding. The focus was on responsive layouts, clean typography, and strong visual hierarchy.",
-    tools: ["Next.js", "TypeScript", "Tailwind CSS", "Figma"],
-    role: "Designer & Developer",
-    duration: "3 Weeks",
-    image: "/profile-placeholder.svg",
-    githubLink: "#",
+    githubLink: "https://github.com",
     liveLink: "#",
     featured: true,
   },
   {
-    title: "Short Motion Graphics Promo",
-    slug: "short-motion-graphics-promo",
-    category: "Motion Graphics",
+    title: "WellnessTracker Mobile Application",
+    slug: "wellness-tracker-app",
+    category: "Mobile App Development",
     shortDescription:
-      "A promotional video concept using animated text and modern transitions.",
+      "A comprehensive health and wellness tracking mobile application for monitoring fitness, nutrition, and mental well-being.",
     fullDescription:
-      "This motion graphics concept was created as a short promotional piece to practice visual storytelling, timing, and animated transitions. The project focused on delivering a bold and energetic visual style.",
-    tools: ["After Effects", "Premiere Pro"],
-    role: "Motion Designer",
+      "WellnessTracker is a feature-rich mobile application designed to help users maintain a holistic approach to their health and wellness. The app allows users to track daily exercise routines, monitor calorie intake, log water consumption, track sleep patterns, and maintain wellness goals. It includes personalized recommendations, progress analytics with beautiful visualizations, achievement badges, and community features. The app syncs data across devices and provides daily insights to motivate users towards their health objectives.",
+    tools: ["React Native", "Firebase", "Redux", "Apple Health", "Google Fit"],
+    role: "Mobile App Developer",
+    duration: "6 Weeks",
+    image: "/profile-placeholder.svg",
+    githubLink: "https://github.com",
+    featured: true,
+  },
+  {
+    title: "TechVision Brand Identity",
+    slug: "techvision-logo-design",
+    category: "Logo Design",
+    shortDescription:
+      "A modern and scalable logo design for a technology consulting startup focusing on digital transformation.",
+    fullDescription:
+      "This logo design project involved creating a distinctive visual identity for TechVision, a technology consulting firm. The design emphasizes innovation, forward-thinking, and digital transformation through a geometric approach. The logo works seamlessly across all mediums - from digital applications to print materials - with careful attention to color psychology and brand positioning. The design includes comprehensive brand guidelines ensuring consistency.",
+    tools: ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
+    role: "Logo & Brand Designer",
     duration: "1 Week",
     image: "/profile-placeholder.svg",
+    behanceLink: "#",
+    featured: true,
+  },
+  {
+    title: "GreenEarth Eco-Friendly Logo",
+    slug: "greenearth-logo-design",
+    category: "Logo Design",
+    shortDescription:
+      "A sustainable and eco-conscious logo design for an environmental conservation nonprofit organization.",
+    fullDescription:
+      "The GreenEarth logo represents a commitment to environmental sustainability and conservation. The design incorporates natural elements such as leaves and earth tones, creating a memorable symbol that resonates with the organization's mission. The logo is versatile, working effectively at various scales and in both color and monochrome versions. The design was created with sustainability principles in mind, ensuring longevity and timeless appeal.",
+    tools: ["Adobe Illustrator", "Adobe InDesign"],
+    role: "Logo Designer",
+    duration: "1 Week",
+    image: "/profile-placeholder.svg",
+    behanceLink: "#",
+    featured: true,
+  },
+  {
+    title: "CreativeFlow Studio Branding",
+    slug: "creativeflow-logo-design",
+    category: "Logo Design",
+    shortDescription:
+      "A dynamic and creative logo design for a digital design studio specializing in branding and web design.",
+    fullDescription:
+      "The CreativeFlow Studio logo captures the essence of creativity and fluid design processes. The design uses flowing shapes and vibrant colors to represent dynamic creativity and innovation in digital design. The logo conveys professionalism while maintaining a modern and approachable aesthetic. Includes multiple variations for different applications - from website favicons to large-scale print materials.",
+    tools: ["Adobe Illustrator", "Adobe Photoshop"],
+    role: "Logo & Branding Designer",
+    duration: "1 Week",
+    image: "/profile-placeholder.svg",
+    behanceLink: "#",
     featured: false,
   },
 ];

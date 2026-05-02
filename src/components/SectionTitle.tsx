@@ -6,9 +6,9 @@ type Props = {
 
 export default function SectionTitle({ eyebrow, title, description }: Props) {
   return (
-    <div className="mb-10 max-w-2xl">
+    <div className="mb-10 max-w-2xl animate-fade-in-up">
       {eyebrow && (
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-pink-500">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-green-600">
           {eyebrow}
         </p>
       )}
