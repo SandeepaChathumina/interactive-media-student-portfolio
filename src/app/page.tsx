@@ -32,7 +32,7 @@ export default function HomePage() {
               <Link href="/projects" className="btn-primary">
                 View Projects
               </Link>
-              <a href="/amish-cv-sample.pdf" download className="btn-secondary">
+              <a href="/CV.pdf" download className="btn-secondary">
                 Download CV
               </a>
             </div>

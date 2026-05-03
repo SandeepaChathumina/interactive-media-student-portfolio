@@ -28,7 +28,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <a href="/amish-cv-sample.pdf" download className="btn-primary">
+        <a href="/CV.pdf" download className="btn-primary">
           Download CV
         </a>
       </div>
