@@ -16,7 +16,7 @@ export default function InteractiveBackground() {
   }, []);
 
   return (
-    <div className="fixed inset-0 -z-20 overflow-hidden bg-gradient-to-br from-white via-green-50 to-emerald-50">
+    <div className="fixed inset-0 -z-20 overflow-hidden bg-linear-to-br from-white via-green-50 to-emerald-50">
       {/* Animated light green blobs */}
       <motion.div
         className="absolute -top-32 -right-32 w-80 h-80 bg-linear-to-br from-green-300/30 to-emerald-300/20 rounded-full blur-3xl"
