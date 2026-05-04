@@ -24,9 +24,9 @@ export const siteData = {
   email: "amishtharanyawickramasinghe@gmail.com",
   phone: "0713846649",
   location: "Colombo, Sri Lanka",
-  linkedin: "www.linkedin.com/in/amish-tharanya-wickramasinghe-13aa303b1",
+  linkedin: "https://www.linkedin.com/in/amish-tharanya-wickramasinghe-13aa303b1/",
   github: "https://github.com/AmishTharanya",
-  facebook: "https://www.facebook.com/amish.sample",
+  facebook: "https://web.facebook.com/amishtharanya.wickramasinghe.9",
   degree: "BSc (Hons) in Information Technology Specialization in Interactive Media",
   university: "SLIIT",
   yearOfStudy: "3rd Year",
@@ -56,28 +56,19 @@ export const siteData = {
     "HTML",
     "CSS",
     "JavaScript",
-    "React",
-    "Next.js",
     "Responsive Web Design",
-    "Basic TypeScript",
   ],
   softwareTools: [
     "Figma",
-    "Adobe Photoshop",
     "Adobe Illustrator",
     "Adobe Premiere Pro",
-    "Adobe After Effects",
     "Canva",
     "VS Code",
   ],
   softSkills: [
     "Creativity",
-    "Communication",
     "Teamwork",
     "Problem Solving",
-    "Adaptability",
-    "Presentation Skills",
-    "Time Management",
   ],
   certifications: [
     {
@@ -130,11 +121,11 @@ export const projects: Project[] = [
     role: "Mobile App Developer",
     duration: "6 Weeks",
     image: "/projects/health%20app.jpg",
-    githubLink: "https://github.com",
+    githubLink: "https://github.com/AmishTharanya/Wellness_Tracker",
     featured: true,
   },
   {
-    title: "TechVision Brand Identity",
+    title: "Twitter",
     slug: "techvision-logo-design",
     category: "Logo Design",
     shortDescription:
@@ -149,11 +140,11 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "GreenEarth Eco-Friendly Logo",
-    slug: "greenearth-logo-design",
+    title: "ERICSSON BALL",
+    slug: "ericsson-ball-logo-design",
     category: "Logo Design",
     shortDescription:
-      "A sustainable and eco-conscious logo design for an environmental conservation nonprofit organization.",
+      "A modern and dynamic logo design for the Ericsson Ball brand.",
     fullDescription:
       "The GreenEarth logo represents a commitment to environmental sustainability and conservation. The design incorporates natural elements such as leaves and earth tones, creating a memorable symbol that resonates with the organization's mission. The logo is versatile, working effectively at various scales and in both color and monochrome versions. The design was created with sustainability principles in mind, ensuring longevity and timeless appeal.",
     tools: ["Adobe Illustrator", "Adobe InDesign"],
@@ -164,7 +155,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "CreativeFlow Studio Branding",
+    title: "ROAR",
     slug: "creativeflow-logo-design",
     category: "Logo Design",
     shortDescription:
