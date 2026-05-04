@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 import ProjectCard from "@/components/ProjectCard";
+import InteractiveBackground from "@/components/InteractiveBackground";
 import { projects, siteData } from "@/data/site";
 
 export default function HomePage() {
@@ -8,11 +9,8 @@ export default function HomePage() {
 
   return (
     <>
+      <InteractiveBackground />
       <section className="section-space relative overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-green-200/30 to-emerald-200/30 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-emerald-200/30 to-teal-200/30 rounded-full blur-3xl"></div>
-        </div>
         <div className="container-custom grid items-center gap-12 md:grid-cols-2">
           <div className="animate-fade-in-up">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-green-600">
