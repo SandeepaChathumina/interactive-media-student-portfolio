@@ -5,14 +5,26 @@ import { useEffect, useState } from "react";
 
 export default function InteractiveBackground() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
+    // Set initial window width
+    setWindowWidth(window.innerWidth);
+
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
     window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
@@ -101,7 +113,7 @@ export default function InteractiveBackground() {
         {[...Array(4)].map((_, i) => (
           <motion.path
             key={`curve-${i}`}
-            d={`M 0,${100 + i * 120} Q ${window.innerWidth / 2},${50 + i * 120} ${window.innerWidth},${100 + i * 120}`}
+            d={`M 0,${100 + i * 120} Q ${windowWidth / 2},${50 + i * 120} ${windowWidth},${100 + i * 120}`}
             fill="none"
             stroke="rgb(16, 185, 129)"
             strokeWidth="2"
